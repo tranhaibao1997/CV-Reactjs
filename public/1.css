@@ -40,6 +40,7 @@ section {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 
 .nav-bar-selection-wrapper {
@@ -104,7 +105,7 @@ section {
 .profile-picture .picture-wrapper img {
     max-width: 100%;
     max-height: 100%;
-    border: 20px solid rgba(0, 0, 0, 0.17);
+    /* border: 20px solid rgba(0, 0, 0, 0.17); */
     border-radius: 50%;
 }
 
@@ -331,6 +332,10 @@ section {
     }
     #nav-bar-for-mobile {
         display: block;
+    }
+    .profile-picture .picture-wrapper {
+        width: 300px;
+        height: 300px;
     }
     section {
         margin-bottom: 50px;

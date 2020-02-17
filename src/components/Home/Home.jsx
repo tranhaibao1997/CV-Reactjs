@@ -3,6 +3,7 @@ import React from 'react'
 export default function Home()
 {
     return(
+      
         <section className="introduce">
         <div className="introduce-content">
           <div className="profile-picture">
@@ -21,7 +22,7 @@ export default function Home()
             <p><i className="fa fa-home" aria-hidden="true" /> Trịnh Đình Trọng Street, Tân Phú District, HCM City</p>
             <ul>
               <li>
-                <a>
+                <a href="https://facebook.com/tranhaibao1997">
                   <i className="fab fa-facebook" aria-hidden="true" />
                 </a>
               </li>
@@ -31,7 +32,7 @@ export default function Home()
                 </a>
               </li>
               <li>
-                <a>
+                <a href="https://github.com/tranhaibao1997">
                   <i className="fab fa-github" aria-hidden="true" />
                 </a>
               </li>

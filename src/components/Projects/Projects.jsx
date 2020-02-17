@@ -10,7 +10,7 @@ export default function Projects() {
                 <Tabs>
                     <TabList>
                         <Tab>Shopping Page</Tab>
-                        <Tab>Title 2</Tab>
+                        <Tab>Project 2 (on Going)</Tab>
                     </TabList>
 
                     <TabPanel>
@@ -22,7 +22,7 @@ export default function Projects() {
                         
                     </TabPanel>
                     <TabPanel>
-                        <h2>Any content 2</h2>
+                        <h2>On Going...</h2>
                     </TabPanel>
                 </Tabs>
             </div>

@@ -4,7 +4,7 @@ export default function History()
 {
     return(
       <section className="history">
-      <section className="education">
+      <div className="education">
         <div className="education-content">
           <h3>Education</h3>
           <div className="education-part">
@@ -15,8 +15,8 @@ export default function History()
             </div>
           </div>
         </div>
-      </section>
-      <section className="experience">
+      </div>
+      <div className="experience">
         <div className="experience-content">
           <h3>Work Experience</h3>
           <div className="experience-part">
@@ -34,7 +34,7 @@ export default function History()
             </div>
           </div>
         </div>
-      </section>
+      </div>
       
     </section>
     

@@ -37,7 +37,7 @@ export default function About()
               </li>
               <li>RestAPI</li>
             </ul>
-            <button className="btn">Download CV <i className="fa fa-download" aria-hidden="true" /></button>
+            <button className="btn"><a id="CV-Download" href="https://drive.google.com/open?id=1vle9azcMv4i6RSH6Z84dBd59KCST8dq-"><i className="fa fa-download" style={{marginRight:'10px'}} aria-hidden="true" />Download CV</a> </button>
           </div>
         </div>
       </section>

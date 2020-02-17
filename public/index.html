@@ -30,11 +30,16 @@
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
+        const navClose = document.getElementById('nav-mobile-btn-close');
         const navBarBtn = document.getElementById('nav-bar-btn');
         const navBar = document.getElementById('nav-bar-for-mobile')
         navBarBtn.addEventListener("click", function() {
             navBar.classList.toggle("mobile-nav-open")
         })
+        navClose.addEventListener("click", function() {
+            navBar.classList.toggle("mobile-nav-open")
+        })
+
 
     }, false)
 </script>

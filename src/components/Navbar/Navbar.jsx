@@ -11,6 +11,7 @@ function Navbar() {
     <>
       {/* Hidden Menu */}
       <div id="nav-bar-for-mobile">
+      <i style={{position:'absolute', right:'10px', top:'30px'}} class="fas fa-window-close" id="nav-mobile-btn-close"></i>
         <ul>
           <li>
             <Link className={link === "home" ? "nav-link active" : "nav-link"} id="home" to="/" onClick={(a) => ChangeLink('home')}>Home</Link>

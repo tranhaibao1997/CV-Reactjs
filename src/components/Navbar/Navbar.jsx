@@ -7,6 +7,10 @@ function Navbar() {
   function ChangeLink(link) {
     setLink(link)
   }
+  function openTab()
+  {
+    
+  }
 
   return (
     <>
@@ -58,7 +62,7 @@ function Navbar() {
             </ul>
           </li>
           <li className="nav-bar-btn" >
-            <btn id="nav-bar-btn">
+            <btn id="nav-bar-btn" onClick={openTab}>
             <i className="fas fa-bars"></i>
             </btn>
            

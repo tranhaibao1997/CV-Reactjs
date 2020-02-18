@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-
 function Navbar() {
   const [link, setLink] = useState("");
   const [Tab,setTab]=useState("")
   function ChangeLink(link) {
-    setLink(link)
+    setLink(link);
+    window.scrollTo(0, 0);
   }
   function openTab()
   {
@@ -19,6 +19,11 @@ function Navbar() {
  setTab("");
     }
   }
+  function closeTab()
+  {
+    window.scrollTo(0, 0);
+    setTab("")
+  }
 
   return (
     <>
@@ -27,19 +32,19 @@ function Navbar() {
       <i style={{position:'absolute', right:'10px', top:'30px', fontSize:'30px'}} class="fas fa-window-close" id="nav-mobile-btn-close" onClick={openTab}></i>
         <ul>
           <li>
-            <Link className={link === "home" ? "nav-link active" : "nav-link"} id="home" to="/" onClick={(a) => ChangeLink('home')}>Home</Link>
+            <Link className={link === "home" ? "nav-link active" : "nav-link"} id="home" to="/" onClick={closeTab}>Home</Link>
           </li>
           <li>
-            <Link className={link === "about" ? "nav-link active" : "nav-link"} id="about" to="/About" onClick={(a) => ChangeLink('about')}>About</Link>
+            <Link className={link === "about" ? "nav-link active" : "nav-link"} id="about" to="/About" onClick={closeTab}>About</Link>
           </li>
           <li>
-            <Link className={link === "exp" ? "nav-link active" : "nav-link"} id="experients" to="/Experience" onClick={(a) => ChangeLink('exp')}>Experience</Link>
+            <Link className={link === "exp" ? "nav-link active" : "nav-link"} id="experients" to="/Experience" onClick={closeTab}>Experience</Link>
           </li>
           <li>
-            <Link className={link === "port" ? "nav-link active" : "nav-link"} id="portfollo" to="/PortFolio" onClick={(a) => ChangeLink('port')}>Portfolio</Link>
+            <Link className={link === "port" ? "nav-link active" : "nav-link"} id="portfollo" to="/PortFolio" onClick={closeTab}>Portfolio</Link>
           </li>
           <li>
-            <Link className={link === "contact" ? "nav-link active" : "nav-link"} id="Contact" to="/Contact" onClick={(a) => ChangeLink('contact')}>Contact</Link>
+            <Link className={link === "contact" ? "nav-link active" : "nav-link"} id="Contact" to="/Contact" onClick={closeTab}>Contact</Link>
           </li>
         </ul>
       </div>
@@ -48,7 +53,7 @@ function Navbar() {
 
         <ul className="nav-bar-big-list">
           <li className="logo">
-            <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/fedalon_logo.png" />
+            <img src="/fedalon_logo.png" alt="" />
           </li>
           <li className="nav-bar-selection-wrapper">
             <ul className="nav-bar-selection">

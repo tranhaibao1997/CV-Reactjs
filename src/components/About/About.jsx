@@ -5,16 +5,23 @@ import { fadeInLeft } from 'react-animations'
 
 
 export default function About() {
+
+ 
+
+
   const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
   const Shake = styled.div`animation: 2s ${keyframes`${swing}`} infinite`;
   const FadeLeft = styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
+
+
+
   return (
     <FadeLeft>
       <section className="about-me">
         <div className="about-me-content">
           <div className="about-me-picture">
             <div className="about-me-picture-wrapper">
-              <img src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/ab-img.png" />
+              <img src="/about.png" />
             </div>
           </div>
           <div className="about-me-profile">

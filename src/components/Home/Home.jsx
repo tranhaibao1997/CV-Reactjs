@@ -28,7 +28,7 @@ export default function Home()
           <div className="profile-picture">
             <SlowFadeLeft1>
             <div className="picture-wrapper">
-              <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-9/83849345_1108592226185775_2031408630657449984_n.jpg?_nc_cat=106&_nc_ohc=GHv6yFOCjL8AX8rxhdh&_nc_ht=scontent.fsgn5-6.fna&oh=403eda980762951878526d4edc52fd5e&oe=5EC48D20" />
+              <img src="/profile.jpg" />
             </div>
             </SlowFadeLeft1>
           </div>

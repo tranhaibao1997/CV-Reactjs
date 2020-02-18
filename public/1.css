@@ -81,10 +81,6 @@
                                         z-index: 10000000;
                                     }
                                     
-                                    #nav-bar-btn:hover {
-                                        background-color: turquoise;
-                                    }
-                                    
                                     .nav-bar-selection .nav-link:hover {
                                         color: #0bceaf;
                                         cursor: pointer;
@@ -226,8 +222,13 @@
                                     }
                                     
                                     #nav-bar-for-mobile {
-                                        /* transform: translateX(-110%); */
-                                        width: 70%;
+                                        transform: translateX(-110%);
+                                        transform: translateX(-110%);
+                                        -ms-transform: translateX(-110%);
+                                        -webkit-transform: translateX(-110%);
+                                        -moz-transform: translateX(-110%);
+                                        -o-transform: translateX(-110%);
+                                        width: 60%;
                                         height: 100vh;
                                         background-color: #0bceaf;
                                         position: fixed;
@@ -239,12 +240,11 @@
                                     }
                                     
                                     .mobile-nav-open {
-                                        background-color: tomato !important;
-                                        transform: translateX(-100%) !important;
-                                        -ms-transform: translateX(-100%) !important;
-                                        -webkit-transform: translateX(-100%) !important;
-                                        -moz-transform: translateX(-100%) !important;
-                                        -o-transform: translateX(-100%) !important;
+                                        transform: translateX(0%) !important;
+                                        -ms-transform: translateX(0%) !important;
+                                        -webkit-transform: translateX(0%) !important;
+                                        -moz-transform: translateX(0%) !important;
+                                        -o-transform: translateX(0%) !important;
                                     }
                                     
                                     #nav-bar-for-mobile ul {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
+
 function Navbar() {
   const [link, setLink] = useState("");
   function ChangeLink(link) {
@@ -56,8 +57,11 @@ function Navbar() {
               </li>
             </ul>
           </li>
-          <li className="nav-bar-btn" id="nav-bar-btn">
+          <li className="nav-bar-btn" >
+            <btn id="nav-bar-btn">
             <i className="fas fa-bars" style={{ fontSize: '30px' }}></i>
+            </btn>
+           
           </li>
         </ul>
       </section>

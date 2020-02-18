@@ -6,12 +6,12 @@ import {fadeInLeft} from 'react-animations'
 export default function History()
 {
 
-  const FadeLeft= styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
+  const FadeLeft= styled.div`animation: 2s ${keyframes`${fadeInLeft}`} ease`;
+  const SlowFadeLeft= styled.div`animation: 3s ${keyframes`${fadeInLeft}`} ease `;
     return(
-      <FadeLeft>
-    
-     
+      
       <section className="history">
+        <FadeLeft>
       <div className="education">
         <div className="education-content">
           <h3>Education</h3>
@@ -24,6 +24,8 @@ export default function History()
           </div>
         </div>
       </div>
+      </FadeLeft>
+      <SlowFadeLeft>
       <div className="experience">
         <div className="experience-content">
           <h3>Work Experience</h3>
@@ -43,9 +45,12 @@ export default function History()
           </div>
         </div>
       </div>
+          
+      </SlowFadeLeft>
+      
       
     </section>
-    </FadeLeft>
+   
     
     )
 }

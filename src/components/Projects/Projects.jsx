@@ -3,10 +3,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import styled,{keyframes} from 'styled-components'
 import {bounce} from 'react-animations'
-import {fadeInLeft} from 'react-animations'
+import {fadeInLeft,flash} from 'react-animations'
 
 export default function Projects() {
     const FadeLeft= styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
+    const Shake = styled.div`animation: 2s ${keyframes`${flash}`} infinite`;
     return (
         <FadeLeft>
         <section className="projects">
@@ -15,7 +16,7 @@ export default function Projects() {
                 <Tabs>
                     <TabList>
                         <Tab>Shopping Page</Tab>
-                        <Tab>Project 2 (on Going)</Tab>
+                        <Tab><Shake>Project 2 (on Going)</Shake></Tab>
                     </TabList>
 
                     <TabPanel>

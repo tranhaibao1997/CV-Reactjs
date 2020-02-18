@@ -81,6 +81,10 @@
                                         z-index: 10000000;
                                     }
                                     
+                                    #nav-bar-btn:hover {
+                                        background-color: turquoise;
+                                    }
+                                    
                                     .nav-bar-selection .nav-link:hover {
                                         color: #0bceaf;
                                         cursor: pointer;

@@ -59,7 +59,7 @@ function Navbar() {
           </li>
           <li className="nav-bar-btn" >
             <btn id="nav-bar-btn">
-            <i className="fas fa-bars" style={{ fontSize: '30px' }}></i>
+            <i className="fas fa-bars"></i>
             </btn>
            
           </li>

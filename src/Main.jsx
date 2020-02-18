@@ -13,7 +13,16 @@ const ExperiencePage = React.lazy(() => import('./components/History/History'))
 const ProjectPage = React.lazy(() => import('./components/Projects/Projects'))
 // const ContactPage = React.lazy(() => import('./components/Home/Home'))
 function Main() {
+    useEffect(()=>{
+        setLoading(true)
+    },[])
     const [loading,setLoading]=useState(false);
+    if(loading===false)
+    {
+        return <Loading></Loading>
+    }
+  
+    
     return (
         <BrowserRouter>
             <Navbar></Navbar>

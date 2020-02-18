@@ -78,6 +78,7 @@
                                     #nav-bar-btn {
                                         font-size: 30px;
                                         padding: 30px;
+                                        z-index: 10000000;
                                     }
                                     
                                     .nav-bar-selection .nav-link:hover {
@@ -484,7 +485,6 @@
                                                     }
                                                     .nav-bar-btn {
                                                         display: block;
-                                                        margin-right: 30px;
                                                     }
                                                     .nav-bar-big-list {
                                                         justify-content: space-around;

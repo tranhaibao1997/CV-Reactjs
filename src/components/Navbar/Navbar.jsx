@@ -4,19 +4,27 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   const [link, setLink] = useState("");
+  const [Tab,setTab]=useState("")
   function ChangeLink(link) {
     setLink(link)
   }
   function openTab()
   {
-    
+    if(Tab==="")
+    {
+    setTab("mobile-nav-open")
+    }
+    else
+    {
+ setTab("");
+    }
   }
 
   return (
     <>
       {/* Hidden Menu */}
-      <div id="nav-bar-for-mobile">
-      <i style={{position:'absolute', right:'10px', top:'30px', fontSize:'30px'}} class="fas fa-window-close" id="nav-mobile-btn-close"></i>
+      <div id="nav-bar-for-mobile" className={Tab}>
+      <i style={{position:'absolute', right:'10px', top:'30px', fontSize:'30px'}} class="fas fa-window-close" id="nav-mobile-btn-close" onClick={openTab}></i>
         <ul>
           <li>
             <Link className={link === "home" ? "nav-link active" : "nav-link"} id="home" to="/" onClick={(a) => ChangeLink('home')}>Home</Link>

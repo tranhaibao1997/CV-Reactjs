@@ -9,7 +9,7 @@ export default function About() {
  
 
 
-  const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
+  const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} ; animation-iteration-count:2`;
   const Shake = styled.div`animation: 2s ${keyframes`${swing}`} infinite`;
   const FadeLeft = styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
 

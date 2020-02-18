@@ -19,7 +19,7 @@ export default function Home()
   const SlowFadeLeft4= styled.div`animation: 3.6s ${keyframes`${fadeInLeft}`} ease `;
   const SlowFadeLeft5= styled.div`animation: 4s ${keyframes`${fadeInLeft}`} ease `;
   const SlowFadeLeft6= styled.div`animation: 4.3s ${keyframes`${fadeInLeft}`} ease `;
-  const Shake = styled.div`animation: 2s ${keyframes`${tada}`} infinite`;
+  const Shake = styled.div`animation: 2s ${keyframes`${tada}`}; animation-iteration-count:3`;
   
     return(
       <FadeLeft>
@@ -57,7 +57,7 @@ export default function Home()
         <SlowFadeLeft6>
         <ul>
               <li>
-                <a href="https://facebook.com/tranhaibao1997">
+                <a href="https://www.facebook.com/profile.php?id=100011050242359">
                   <i className="fab fa-facebook" aria-hidden="true" />
                 </a>
               </li>

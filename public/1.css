@@ -239,6 +239,7 @@
                                     }
                                     
                                     .mobile-nav-open {
+                                        background-color: tomato !important;
                                         transform: translateX(-100%) !important;
                                         -ms-transform: translateX(-100%) !important;
                                         -webkit-transform: translateX(-100%) !important;

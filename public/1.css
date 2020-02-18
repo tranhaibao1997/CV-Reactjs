@@ -240,6 +240,10 @@
                                     
                                     .mobile-nav-open {
                                         transform: translateX(-100%) !important;
+                                        -ms-transform: translateX(-100%) !important;
+                                        -webkit-transform: translateX(-100%) !important;
+                                        -moz-transform: translateX(-100%) !important;
+                                        -o-transform: translateX(-100%) !important;
                                     }
                                     
                                     #nav-bar-for-mobile ul {

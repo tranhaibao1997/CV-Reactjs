@@ -1,4 +1,6 @@
 import React from 'react'
+import {useEffect} from 'react'
+import Loading from '../Loading/Loading'
 
 export default function Home()
 {

@@ -1,8 +1,92 @@
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #0bceaf;
+    animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     height: 100%;
+    background-color: #F9F9FF;
 }
 
 h3 {
@@ -17,6 +101,9 @@ h5 {
 
 section {
     margin-top: 250px;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 250px;
 }
 
 #highlight {
@@ -34,11 +121,14 @@ section {
 
 .nav-bar {
     padding-top: 30px;
+    padding-bottom: 30px;
     margin-top: 0px;
     position: fixed;
     top: 0;
-    width: 60%;
+    width: 100%;
     background-color: white;
+    z-index: 100;
+    background-size: cover;
 }
 
 .nav-bar-big-list {
@@ -46,6 +136,8 @@ section {
     display: flex;
     justify-content: space-between;
     padding: 0;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .nav-bar-selection-wrapper {
@@ -116,6 +208,23 @@ section {
 
 .introduce-profile {
     width: 50%;
+    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+}
+
+.introduce-profile::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid white;
+    position: absolute;
+    right: -2%;
+    top: 30%;
 }
 
 .introduce .introduce-content #hello {
@@ -179,6 +288,12 @@ section {
     color: #0bceaf;
     border-radius: 5px;
     transition: 0.4s;
+    transform: scale(1.4);
+}
+
+.introduce .introduce-content ul li:hover a i {
+    color: #0bceaf;
+    transform: scale(1.4);
 }
 
 #nav-bar-for-mobile {
@@ -265,6 +380,12 @@ section {
 #CV-Download {
     color: white;
     text-decoration: none;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+#CV-Download:hover {
+    transform: perspective(100px) translateZ(1);
 }
 
 .history {
@@ -281,6 +402,8 @@ section {
     -webkit-box-shadow: 0px 10px 20px 4px #00000015;
     box-shadow: 0px 10px 20px 4px #00000015;
     padding: 18px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .experience .experience-content h3 {
@@ -294,6 +417,8 @@ section {
     box-shadow: 0px 10px 20px 4px #00000015;
     padding: 18px;
     margin-bottom: 30px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .projects-content h3 {
@@ -310,6 +435,7 @@ section {
 }
 
 .react-tabs__tab--selected {
+    background-color: #F9F9FF !important;
     border: none !important;
     border-bottom: 2px solid #0bceaf !important
 }

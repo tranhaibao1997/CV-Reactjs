@@ -479,6 +479,9 @@
                                                     .nav-bar {
                                                         width: 100%;
                                                     }
+                                                    .nav-bar-big-list {
+                                                        width: 95%;
+                                                    }
                                                     .nav-bar-btn {
                                                         display: block;
                                                         margin-right: 30px;

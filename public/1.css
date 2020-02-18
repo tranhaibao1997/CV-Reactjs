@@ -75,6 +75,10 @@
                                         position: relative;
                                     }
                                     
+                                    #nav-bar-btn {
+                                        font-size: 30px;
+                                    }
+                                    
                                     .nav-bar-selection .nav-link:hover {
                                         color: #0bceaf;
                                         cursor: pointer;

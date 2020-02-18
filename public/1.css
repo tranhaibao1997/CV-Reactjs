@@ -226,7 +226,7 @@
                                     }
                                     
                                     #nav-bar-for-mobile {
-                                        transform: translateX(-110%);
+                                        /* transform: translateX(-110%); */
                                         width: 70%;
                                         height: 100vh;
                                         background-color: #0bceaf;

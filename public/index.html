@@ -31,20 +31,19 @@
     -->
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-
+    window.onload = function() {
         const navClose = document.getElementById('nav-mobile-btn-close');
         const navBarBtn = document.getElementById('nav-bar-btn');
         const navBar = document.getElementById('nav-bar-for-mobile')
         navBarBtn.addEventListener("click", function() {
+            console.log("test")
             navBar.classList.toggle("mobile-nav-open")
         })
         navClose.addEventListener("click", function() {
+            console.log("test2")
             navBar.classList.toggle("mobile-nav-open")
         })
-
-
-    }, false)
+    }
 </script>
 
 </html>

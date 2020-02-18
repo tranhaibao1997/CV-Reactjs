@@ -1,11 +1,18 @@
 import React from 'react'
-import {useEffect} from 'react'
-import Loading from '../Loading/Loading'
+import styled,{keyframes} from 'styled-components'
+import {bounce} from 'react-animations'
+import {fadeInLeft} from 'react-animations'
+
+
+
+
 
 export default function Home()
 {
+  const FadeLeft= styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
+  
     return(
-      
+      <FadeLeft>
         <section className="introduce">
         <div className="introduce-content">
           <div className="profile-picture">
@@ -42,5 +49,6 @@ export default function Home()
           </div>
         </div>
       </section>
+      </FadeLeft>
     )
 }

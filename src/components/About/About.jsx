@@ -1,8 +1,15 @@
 import React from 'react'
+import styled,{keyframes} from 'styled-components'
+import {bounce} from 'react-animations'
+import {fadeInLeft} from 'react-animations'
+
 
 export default function About()
 {
+  const Bounce= styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
+  const FadeLeft= styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
     return(
+      <FadeLeft>
         <section className="about-me">
         <div className="about-me-content">
           <div className="about-me-picture">
@@ -37,9 +44,10 @@ export default function About()
               </li>
               <li>RestAPI</li>
             </ul>
-            <button className="btn"><a id="CV-Download" href="https://drive.google.com/open?id=1vle9azcMv4i6RSH6Z84dBd59KCST8dq-"><i className="fa fa-download" style={{marginRight:'10px'}} aria-hidden="true" />Download CV</a> </button>
+            <Bounce>  <button className="btn"><a id="CV-Download" href="https://drive.google.com/open?id=1vle9azcMv4i6RSH6Z84dBd59KCST8dq-"><i className="fa fa-download" style={{marginRight:'10px'}} aria-hidden="true" />Download CV</a> </button></Bounce> 
           </div>
         </div>
       </section>
+      </FadeLeft>
     )
 }

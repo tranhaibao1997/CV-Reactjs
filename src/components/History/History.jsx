@@ -1,8 +1,16 @@
 import React from 'react'
+import styled,{keyframes} from 'styled-components'
+import {bounce} from 'react-animations'
+import {fadeInLeft} from 'react-animations'
 
 export default function History()
 {
+
+  const FadeLeft= styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
     return(
+      <FadeLeft>
+    
+     
       <section className="history">
       <div className="education">
         <div className="education-content">
@@ -37,6 +45,7 @@ export default function History()
       </div>
       
     </section>
+    </FadeLeft>
     
     )
 }

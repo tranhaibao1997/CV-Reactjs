@@ -239,7 +239,7 @@
                                     }
                                     
                                     .mobile-nav-open {
-                                        transform: translateX(0%) !important;
+                                        transform: translateX(-100%) !important;
                                     }
                                     
                                     #nav-bar-for-mobile ul {

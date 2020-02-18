@@ -32,14 +32,14 @@ export default function History()
           <div className="experience-part">
             <div className="experience-part-content">
               <h5>Fresher Front-End Developer from<span id="highlight"> MMSoft Company</span> </h5>
-              <p id="highlight">3/2019 - 9/2019</p>
+              <p id="highlight">7/2019 - 9/2019</p>
               <p className="description">Be trained about TypeScript, ReactJS, join company's projects and support front-end team. Develop an e-commerce website which uses ReactJs, REST API, Redux, CI/CD (Netlify), Firebase( Authenticate), ES6 , ES7 - 8</p>
             </div>
           </div>
           <div className="experience-part">
             <div className="experience-part-content">
               <h5>Front-End Developer from<span id="highlight"> MangoAds Company</span> </h5>
-              <p id="highlight">10/2019 - 12/2019</p>
+              <p id="highlight">11/2019 - 2/2020</p>
               <p className="description">Build templates for wordpress using php and laravel, support front-end team.</p>
             </div>
           </div>

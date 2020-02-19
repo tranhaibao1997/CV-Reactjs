@@ -3,10 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import styled,{keyframes} from 'styled-components'
 import {bounce} from 'react-animations'
-import {zoomInDown,flash} from 'react-animations'
+import {fadeInRight,flash} from 'react-animations'
 
 export default function Projects() {
-    const FadeLeft= styled.div`animation: 2s ${keyframes`${zoomInDown}`} `;
+    const FadeLeft= styled.div`animation: 2s ${keyframes`${fadeInRight}`} `;
     const Shake = styled.div`animation: 1.5s ${keyframes`${flash}`} ; animation-iteration-count:3`;
     return (
         <FadeLeft>

@@ -11,7 +11,7 @@ const HomePage = React.lazy(() => import('./components/Home/Home'))
 const AboutPage = React.lazy(() => import('./components/About/About'))
 const ExperiencePage = React.lazy(() => import('./components/History/History'))
 const ProjectPage = React.lazy(() => import('./components/Projects/Projects'))
-// const ContactPage = React.lazy(() => import('./components/Home/Home'))
+const ContactPage = React.lazy(() => import('./components/Contact/Contact'))
 function Main() {
     useEffect(()=>{
         setLoading(true)
@@ -33,6 +33,7 @@ function Main() {
             <Route path="/About" component={AboutPage}/>
             <Route path="/Experience" component={ExperiencePage}/>
             <Route path="/Portfolio" component={ProjectPage}/>
+            <Route path="/Contact" component={ContactPage}/>
       
             </Switch>
             </React.Suspense>

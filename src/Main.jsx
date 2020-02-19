@@ -26,6 +26,7 @@ function Main() {
     return (
         <BrowserRouter>
             <Navbar></Navbar>
+            
             <React.Suspense fallback={<Loading/>}>
             <Switch>
             <Route path="/" exact><HomePage/></Route>

@@ -4,6 +4,11 @@
                                         margin: 0 auto;
                                         height: 100%;
                                         background-color: #F9F9FF;
+                                        background-image: url(http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/map-color-overlay.png);
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        background-attachment: fixed;
+                                        background-size: cover;
                                     }
                                     
                                     h3 {
@@ -45,7 +50,7 @@
                                         width: 100%;
                                         background-color: white;
                                         z-index: 100;
-                                        background-size: cover;
+                                        background-image: none;
                                     }
                                     
                                     .nav-bar-big-list {

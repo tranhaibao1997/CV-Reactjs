@@ -40,9 +40,9 @@ export default function Contact() {
                             <p className="contact-part-title">
                                 Email
                         </p>
-                            <p className="contact-part-info">
+                            <a style={{color:'black',textDecoration:'none'}} className="contact-part-info" href="mailto:tranhaibao1997@gmail.com">
                                 tranhaibao1997@gmail.com
-                            </p>
+                            </a>
                         </div>
                         </SlowFadeUp2>
                     </li>
@@ -57,9 +57,9 @@ export default function Contact() {
                             <p className="contact-part-title">
                                 Phone
                         </p>
-                            <p className="contact-part-info">
+                        <a style={{color:'black',textDecoration:'none'}} className="contact-part-info" href="tel:0932632166">
                                 +84 932 632 166
-                            </p>
+                            </a>
                         </div>
                         </SlowFadeUp3>
                     </li>

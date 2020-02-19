@@ -530,6 +530,9 @@
                                                     .contact ul {
                                                         margin: 0 auto;
                                                     }
+                                                    section {
+                                                        padding-top: 150px;
+                                                    }
                                                 }
                                                 @media only screen and (max-width: 576px) {
                                                     h3 {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 import { bounce, swing } from 'react-animations'
-import { fadeInLeft } from 'react-animations'
+import { flipInY } from 'react-animations'
 
 
 export default function About() {
@@ -11,7 +11,7 @@ export default function About() {
 
   const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} ; animation-iteration-count:2`;
   const Shake = styled.div`animation: 2s ${keyframes`${swing}`} infinite`;
-  const FadeLeft = styled.div`animation: 2s ${keyframes`${fadeInLeft}`} `;
+  const FadeLeft = styled.div`animation: 2s ${keyframes`${flipInY}`} `;
 
 
 

@@ -1,14 +1,16 @@
 import React from 'react'
 import styled,{keyframes} from 'styled-components'
 import {bounce} from 'react-animations'
-import {fadeInUp,tada} from 'react-animations'
+import {fadeInUp,tada,flip} from 'react-animations'
 
 export default function Contact() {
+    const FadeLeft= styled.div`animation: 1.5s ${keyframes`${flip}`} `;
     const SlowFadeUp1= styled.div`animation: 2.5s ${keyframes`${fadeInUp}`} ease  `;
   const SlowFadeUp2= styled.div`animation: 3s ${keyframes`${fadeInUp}`} ease `;
   const SlowFadeUp3= styled.div`animation: 3.3s ${keyframes`${fadeInUp}`} ease `;
     return (
         <>
+        <FadeLeft>
             <section className="contact">
                 <h3 style={{textAlign:'center',fontSize:'30px'}}>Contact Me</h3>
                 <ul className="contact-list">
@@ -65,6 +67,7 @@ export default function Contact() {
                     </li>
                 </ul>
             </section>
+            </FadeLeft>
         </>
     )
 }

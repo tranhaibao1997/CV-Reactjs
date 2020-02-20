@@ -51,7 +51,7 @@ export default function Home()
             </SlowFadeLeft4>
            <SlowFadeLeft5>
            <p><i className="fa fa-envelope" aria-hidden="true" /> tranhaibao1997@gmail.com</p>
-            <p><i className="fa fa-phone" aria-hidden="true" /> +84 932 632 166</p>
+            <p><i className="fa fa-phone" aria-hidden="true" /> +84 913 620 322</p>
             <p><i className="fa fa-home" aria-hidden="true" /> Trịnh Đình Trọng Street, Tân Phú District, HCM City</p>
            </SlowFadeLeft5>
         <SlowFadeLeft6>

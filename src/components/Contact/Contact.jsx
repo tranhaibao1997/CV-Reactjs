@@ -60,7 +60,7 @@ export default function Contact() {
                                 Phone
                         </p>
                         <a style={{color:'black',textDecoration:'none'}} className="contact-part-info" href="tel:0932632166">
-                                +84 932 632 166
+                                +84 913 620 322
                             </a>
                         </div>
                         </SlowFadeUp3>

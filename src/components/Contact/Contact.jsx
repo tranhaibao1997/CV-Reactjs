@@ -59,7 +59,7 @@ export default function Contact() {
                             <p className="contact-part-title">
                                 Phone
                         </p>
-                        <a style={{color:'black',textDecoration:'none'}} className="contact-part-info" href="tel:0932632166">
+                        <a style={{color:'black',textDecoration:'none'}} className="contact-part-info" href="tel:0913620322">
                                 +84 913 620 322
                             </a>
                         </div>

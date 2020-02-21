@@ -68,7 +68,7 @@ export default function About() {
               </Shake>
 
             </ul>
-            <Bounce>  <button className="btn"><a id="CV-Download" href="https://drive.google.com/open?id=1IahsJ-Jg4HDox2QEt2moeFJnQ0kXGI4w"><i className="fa fa-download" style={{ marginRight: '10px' }} aria-hidden="true" />Download CV</a> </button></Bounce>
+            <Bounce>  <button className="btn"><a id="CV-Download" href="https://drive.google.com/open?id=1EZHN40sdjgsniNveHA6opmSLcawKesx6"><i className="fa fa-download" style={{ marginRight: '10px' }} aria-hidden="true" />Download CV</a> </button></Bounce>
           </div>
         </div>
       </section>
